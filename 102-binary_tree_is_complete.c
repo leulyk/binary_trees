@@ -22,8 +22,6 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 
 	size = binary_tree_size(tree);
 
-	printf("%ld\n", size);
-	printf("%ld\n", binary_tree_levelorder2(tree));
 	return (size >= binary_tree_levelorder2(tree));
 }
 
