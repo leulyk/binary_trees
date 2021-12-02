@@ -3,7 +3,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_node_uncle - Function finds the uncle/aunt of a node
+ * binary_tree_uncle - Function finds the uncle/aunt of a node
  *
  * @node : Pointer to the node to find the uncle
  *
@@ -14,6 +14,9 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 	int i = 2;
 	binary_tree_t *current_node = node;
+
+	if (node == NULL)
+		return (NULL);
 
 	while (i--)
 	{
